@@ -20,18 +20,24 @@ Rapid Roll Advanced is a game developed using C++ and SFML. It takes inspiration
 Rapid Roll Advanced was developed using C++ and the SFML (Simple and Fast Multimedia Library) library. The project used various object-oriented programming concepts, including encapsulation, inheritance, polymorphism, function and operator overloading, templates, virtual and abstract functions, enumerations, and exceptions.
 
 ## Installation
-- **Powershell**
-    - Download and install PowerShell if you haven't already.
-    - Download or clone the project source code to a directory of your choice.
-    - Navigate to the project directory in PowerShell.
-    - Run the makeSFML.ps1 script.
-- **Installer**
-    - You can use the installer to install the game directly and start playing.
+- ### *Installer*
+    The game can be installed directly using the provided Setup file.
+- ### *Manual Compilation*
+    Alternatively, the game can be manually compiled using the provided source code. To do this, the SFML library must be installed. The version used in our development process has been included to simplify the process for Windows users.
+    - #### *For Windows*
+        - Download or clone the project source code to a directory of your choice.
+        - Navigate to the project directory in PowerShell.
+        - Run the makeSFML.ps1 script.
+    - #### *For GNU/Linux*
+        - To compile the game on GNU/Linux, the SFML library must first be installed. This can typically be done through the package manager of the distribution being used. For example, on Arch Linux, the package is named sfml, while on Ubuntu/Debian and its derivatives, it is libsfml-dev.
+        - Once the SFML library has been installed, open a terminal in the project directory.
+        - Run the ```make``` command.
+    - This might also work on MacOS, though they have not been tested.
 
-Note: If you are using PowerShell on Windows and get an error message about script execution being disabled, you can enable script execution by opening a PowerShell session as an administrator and running the following command:
-```Set-ExecutionPolicy RemoteSigned```
-This will allow PowerShell to run scripts that are locally created, but not ones downloaded from the internet. If you want to allow scripts from the internet as well, you can use the Unrestricted option instead:
-```Set-ExecutionPolicy Unrestricted```
+    Note: If you are using PowerShell on Windows and get an error message about script execution being disabled, you can enable script execution by opening a PowerShell session as an administrator and running the following command:
+    ```Set-ExecutionPolicy RemoteSigned```
+    This will allow PowerShell to run scripts that are locally created, but not ones downloaded from the internet. If you want to allow scripts from the internet as well, you can use the Unrestricted option instead:
+    ```Set-ExecutionPolicy Unrestricted```
 
 
 ## Feedback and Suggestions

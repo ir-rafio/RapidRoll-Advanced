@@ -25,6 +25,7 @@ function Compile {
     foreach ($file in Get-ChildItem -Path $srcDir -Filter *.cpp) {
         g++ -c "$($file.FullName)" -I"$includeDir" -o "$binDir\$($file.Name.Replace('.cpp','.o'))"
     }
+    windres icon.rc -o icon.o
     Write-Output "Done!"
     
     Write-Output "Linking..."
@@ -33,7 +34,7 @@ function Compile {
     foreach ($linker in $linkers) {
         $linkerOptions += "-l$linker"
     }
-    g++ -o "$binDir\Play.exe" "$binDir\*.o" "-L$libDir" @($linkerOptions)
+    g++ -o "$binDir\Play.exe" "$binDir\*.o" "-L$libDir" @($linkerOptions) -mwindows
     Write-Output "Done!"
     
     CreateShortcut
