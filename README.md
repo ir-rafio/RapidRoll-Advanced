@@ -4,6 +4,7 @@ Rapid Roll Advanced is a game developed using C++ and SFML. It takes inspiration
 ## Features
 - Realistic Physics: The physics of the game is implemented to provide players with a smooth and responsive gameplay experience, challenging their reflexes and providing an adrenaline rush that makes the game more immersive.
 - **New Challenges**
+  
     As your score increases, new challenges appear to make the game more difficult and interesting.
     - Moving Platforms: These platforms move both horizontally and vertically.
     - Spikes: These sharp and pointy hazards instantly destroy the ball. Players must plan their movements carefully to navigate around them and avoid losing the game.
@@ -21,7 +22,7 @@ Rapid Roll Advanced was developed using C++ and the SFML (Simple and Fast Multim
 
 ## Installation
 - ### *Installer*
-    The game can be installed directly using the provided Setup file.
+    The game can be installed on Windows directly using the provided Setup file. After installation, the `Play.exe` file can be found inside the `bin` folder.
 - ### *Manual Compilation*
     Alternatively, the game can be manually compiled using the provided source code. To do this, the SFML library must be installed. The version used in our development process has been included to simplify the process for Windows users.
     - #### *For Windows*
@@ -32,7 +33,6 @@ Rapid Roll Advanced was developed using C++ and the SFML (Simple and Fast Multim
         - To compile the game on GNU/Linux, the SFML library must first be installed. This can typically be done through the package manager of the distribution being used. For example, on Arch Linux, the package is named sfml, while on Ubuntu/Debian and its derivatives, it is libsfml-dev.
         - Once the SFML library has been installed, open a terminal in the project directory.
         - Run the ```make``` command.
-    - This might also work on MacOS, though they have not been tested.
 
     Note: If you are using PowerShell on Windows and get an error message about script execution being disabled, you can enable script execution by opening a PowerShell session as an administrator and running the following command:
     ```Set-ExecutionPolicy RemoteSigned```
